@@ -1,0 +1,748 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+:root{
+    --primary:#A67F78;
+    --primary-test:#A67F78;
+    --secondary:#8F8681;
+    --black:#32435F;
+    
+
+}
+
+*{
+    font-family: 'Poppins', sans-serif, 'noto-sans-kr';
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+    color: white;
+}
+
+/*html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: 1.5rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: #c1c1c1;  
+}*/
+
+/* 스크롤 컨테이너의 기본 스타일 */
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5rem;
+    scroll-behavior: smooth;
+    outline: 2px dashed;
+}
+
+
+/* 스크롤 바 스타일 */
+::-webkit-scrollbar {
+    width: 1.5rem; /* 스크롤바의 너비 */
+}
+
+/* 스크롤 바의 막대 부분 */
+::-webkit-scrollbar-thumb {
+    background-color: #888; /* 스크롤바의 색상 */
+}
+
+/* 스크롤 바의 트랙 부분 */
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* 스크롤바의 배경색 */
+}
+
+/* 스크롤바에 마우스를 올렸을 때 */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* 마우스를 올렸을 때 색상 */
+}
+
+/* 스크롤바 버튼 */
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:increment {
+    display: block;
+    height: 8px;
+    background-color: whitesmoke;
+       
+}
+
+
+section{
+    padding: 5rem 7%;
+}
+
+.heading{
+    font-size: 4rem;
+    color: var(--primary);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-bottom: 3rem;
+}
+
+
+
+.header.scrolled {
+    background-color: rgba(255, 255, 255, 0.5); /* 스크롤 시 배경 색상 */
+ }
+
+.header.scrolled a {
+    color: #222; /* 스크롤 시 a 태그의 텍스트 색상 */
+ }
+
+ .header.scrolled .logo p{
+    color: #222; /* 스크롤 시 a 태그의 텍스트 색상 */
+ }
+ .header.scrolled .btn {
+    border-color: #222; /* 스크롤 시 btn 배경 색상 */
+ }
+
+.btn{
+    display: inline-block;
+    border: 2px solid #ffff;
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    color: var;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+.btn-input{
+    display: inline-block;
+    border: 2px solid;
+    padding: 1rem 1rem;
+    color: #32435F;
+   
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+.btn-input:hover{
+    background: #A67F78;
+    color: white !important;
+}
+
+.btn:hover{
+    background: #A67F78;
+
+}
+
+/* header */
+
+.header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    background: var;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+}
+
+.header .logo{
+    display: flex;
+    align-items: center;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: var(--black);
+}
+
+.header .logo .me{
+    padding-right: 1.5rem;
+    
+}
+
+
+.header .navbar a{
+    font-size: 1.7rem;
+    color: var;
+    margin: 0 1rem;
+}
+
+.header .navbar a:hover{
+    color: var(--primary-test);
+}
+
+.header .navbar .btn{
+    margin-top: 0;
+    color: var;
+}
+
+.header .navbar .btn:hover{
+    color: var(--white-test);
+}
+
+#menu-btn{
+    display: none;
+    font-size: 2.5rem;
+    margin-left: 1.7rem;
+    cursor: pointer;
+    color: var(--black);
+}
+
+#menu-btn:hover{
+    color: var(--primary);
+}
+
+/* end */
+
+/* home */
+
+.home{
+    padding: 0;
+}
+
+.home .slide{
+    min-height: 100vh;
+    background-size: cover !important;
+    background-position: center !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+}
+
+.home .slide .content{
+    width: 80%;
+    text-align: center;
+}
+
+.home .slide .content h3{
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: var(--white);
+    line-height: 1.1;
+    padding: 2rem 0;
+}
+
+.swiper-button-next,
+.swiper-button-prev{
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    background: var(--white);
+    color: var(--black);
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover{
+    background: var(--primary);
+    color: var(--white);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after{
+    font-size: 2rem;
+}
+
+/* end */
+
+/* availability */
+
+
+.availability form {
+    display: flex;
+    flex-wrap: wrap; /* Flex 아이템이 줄바꿈이 가능하게 함 */
+    gap: 1rem;
+    padding: 2rem; 
+}
+
+.availability form .box {
+    flex: 1 1 20rem; /* 기본 너비 */
+    border-right: 2px solid #cbcbcb;
+    padding-right: 3rem;
+}
+
+.availability form .box_old {
+    display: flex;
+    flex-wrap: wrap; /* 자식 요소들이 줄바꿈 가능하도록 함 */
+    justify-content: space-evenly;
+    border-right: none;
+}
+
+.availability form .box p {
+    font-weight: bold;
+    font-size: 2rem;
+    color: #32435F;
+}
+
+.availability form .box .input {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: #32435F;
+    margin: 1rem 0;
+    border-radius: .5rem;
+}
+
+.availability form .input option {
+    color: #32435F;
+}
+
+/* 미디어 쿼리로 작은 화면에서 세로로 정렬되도록 조정 */
+@media (max-width: 768px) {
+    .availability form {
+        flex-direction: column; /* 세로로 정렬 */
+    }
+
+    .availability form .box,
+    .availability form .box_old {
+        flex: 1 1 100%; /* 너비를 100%로 설정 */
+        border-right: none; /* 세로로 정렬되므로 경계선 제거 */
+        padding-right: 0; /* 패딩 조정 */
+    }
+
+    .availability form .box_old {
+        flex-direction: column; /* 자식 요소가 세로로 정렬되도록 설정 */
+    }
+}
+
+
+
+/* end */
+
+/* about */
+
+.about .row{
+    display: flexbox;
+    width: 100%;
+    flex-wrap: nowrap;
+    align-items: left;
+    gap: 6rem;
+}
+
+.about .row .image{
+    margin-top: 2rem;
+    /*flex: 1 1 30rem;*/
+}
+
+.about .row .image img{
+    
+    width: 100%;
+}
+
+.about .row .content{
+    flex: 1 1 51rem;
+}
+
+.about .row .content h3{
+    font-size: 3.5rem;
+    color: var(--primary);
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.about .row .content p{
+    font-size: 1.6rem;
+    color: #666;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+
+/* end */
+
+/* rooms */
+
+.room .row{
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+    align-items: left;
+    gap: 6rem;
+}
+
+.room .slide{
+    background: var(--white);
+    border: .1rem solid rgba(0, 0, 0, 0.2);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    margin-bottom: 4rem;
+}
+
+.room .slide .image{
+    height: 25rem;
+    width: 100%;
+    padding: 1.5rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.room .slide .image img{
+    width: 100%;
+    height: 100%;
+    border-radius: .5rem;
+    object-fit: cover;
+}
+
+
+.room .slide .image .price{
+    position: absolute;
+    top: 2.5rem; left: 2.5rem;
+    background: var(--primary);
+    color: var(--white);
+    font-size: 1.7rem;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    text-transform: lowercase;
+}
+
+.room .slide .content{
+    padding: 2rem;
+    padding-top: 0;
+}
+
+.room .slide .content h3{
+    font-size: 2.5rem;
+    color: var(--black);
+}
+
+
+.room .slide .content p{
+    font-size: 1.6rem;
+    color: #666;
+    padding: .5rem 0;
+    line-height: 1.5;
+}
+
+
+
+.room .slide .content .btn:hover {
+    background-color: #A67F78; /* 마우스 오버 시 배경색 변경 */
+    color: #f1f1f1; /* 마우스 오버 시 텍스트 색상 변경 */
+}
+
+.room .slide .content .btn {
+    border: 1px solid #222; /* 기본 배경색 */
+    color: #222; /* 기본 텍스트 색상 */
+    padding: 0.8rem 1.5rem; /* 패딩 */
+    border-radius: 0.5rem; /* 모서리 둥글게 */
+    font-size: 1.5rem; /* 글자 크기 */
+    text-decoration: none; /* 밑줄 제거 */
+    display: inline-block;
+    transition: background-color 0.3s ease; /* 색상 전환 효과 */
+}
+
+/* end */
+
+/* services */
+
+.services .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem,1fr));
+    gap: 2rem;
+    
+}
+
+.services .box-container .box{
+    text-align: center;
+}
+
+.services .box-container .box img{
+    height: 10rem;
+    margin-bottom: .7rem;
+}
+
+.services .box-container .box h3{
+    font-size: 1.7rem;
+    color: var(--black);
+    padding: 1rem 0;
+}
+
+/* end */
+
+/* gallery */
+
+.gallery .slide{
+    margin-top: 1rem;
+    height: 30rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery .slide img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.gallery .slide .icon{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0; left: 0;
+    z-index: 10;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.gallery .slide .icon i{
+    font-size: 6rem;
+    color: var(--white);
+}
+
+.gallery .slide:hover .icon{
+    display: flex;
+}
+
+/* end */
+
+/* reservation */
+
+/*.reservation form{
+    padding: 2rem;
+    border: .2rem solid rgba(0, 0, 0, 0.1);
+    border-radius: 1.5rem;
+}
+
+.reservation form .container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.reservation form .container .box{
+    flex: 1 1 40rem;
+}
+
+.reservation form .container .box p{
+    font-size: 1.8rem;
+    color: var(--primary);
+}
+
+.reservation form .container .box .input{
+    font-size: 1.8rem;
+    width: 100%;
+    padding: 1rem 0;
+    margin: 1rem 0;
+    border-bottom: .2rem solid rgba(0, 0, 0, 0.1);
+    color: var(--black);
+}*/
+
+.reservation form {
+    padding: 2rem;
+    border: .2rem solid rgba(0, 0, 0, 0.1);
+    border-radius: 1.5rem;
+}
+
+.reservation form .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.reservation form .container .box {
+    flex: 1 1 40rem;
+    
+}
+
+.reservation form .container .box p {
+    font-size: 1.8rem;
+    color: var(--primary);
+}
+
+.reservation form .container .box .input {
+    font-size: 1.5rem;
+    width: 100%;
+    padding: 1rem 0;
+    margin: 1rem 0;
+    border-bottom: .2rem solid rgba(0, 0, 0, 0.1);
+    color: var(--black);
+}
+
+/* 옵션 텍스트 색상 변경 */
+.reservation form .container select option {
+    color: #32435F; /* 옵션의 텍스트 색상 변경 */
+}
+
+/* submit 버튼 텍스트 색상 변경 */
+.reservation form input[type="submit"] {
+    color: #222; /* 검정색으로 변경 */
+    border: 1px solid #222;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+}
+
+/* 마우스 오버 시 submit 버튼의 색상 변경 */
+.reservation form input[type="submit"]:hover {
+    color: #f1f1f1; /* hover 시 텍스트 색상 */
+    background-color: #A67F78; /* hover 시 배경색 변경 */
+}
+
+
+
+/* end */
+
+/* footer */
+
+.footer{
+    background: var(--secondary);
+}
+
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+}
+
+.footer .box-container .box h3{
+    font-size: 2.2rem;
+    padding: 1rem 0;
+    
+}
+
+.footer .box-container .box a{
+    font-size: 1.6rem;
+    display: block;
+    color: var(--white);
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a i{
+    padding-right: .5rem;
+}
+
+.footer .box-container .box a:hover{
+    color: var(--black);
+}
+
+.footer .share{
+    padding-top: 3rem;
+    text-align: center;
+}
+
+.footer .share a{
+    color: white;
+    font-size: 2rem;
+    width: 5rem;
+    height: 5rem;
+    line-height: 5rem;
+    border-radius: 50%;
+    border: .1rem solid white;
+    margin: .3rem;
+}
+
+.footer .share a:hover {
+    color: var(--black);
+    border: .1rem solid var(--black); /* border 색상 변경 */
+}
+
+.footer .credit{
+    font-size: 1.5rem;
+    text-align: left;
+    margin-top: 2.5rem;
+    padding-top: 2rem;
+    border-top: .1rem solid rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+
+
+/* end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries */
+
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+
+    .header{
+        padding: 2rem 3rem;
+    }
+
+}
+
+@media (max-width: 768px){
+
+    #menu-btn{
+        display: inline-block;
+    }
+
+    .header .navbar{
+        position: absolute;
+        top: 110%; right: -110%;
+        width: 30rem;
+        box-shadow: var(--box-shadow);
+        background: var(--white);
+        border-radius: .5rem;
+    }
+
+    .header .navbar.active{
+        right: 2rem;
+        transition: .4s linear;
+    }
+
+    .header .navbar a{
+        font-size: 2rem;
+        margin: 2rem 2.5rem;
+        display: block;
+    }
+
+    .home .slide .content{
+        width: 50rem;
+    }
+
+    .review .review-slider{
+        width: 100%;
+        padding: 1rem;
+        padding-top: 15%;
+    }
+
+}
+
+@media (max-width: 450px){
+
+    html{
+        font-size: 50%;
+    }
+
+    .home .slide .content{
+        width: 30rem;
+    }
+
+    .home .slide .content h3{
+        font-size: 3rem;
+    }
+
+}
+
+.noto-sans-kr-test {
+    font-family: "Noto Sans KR", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+

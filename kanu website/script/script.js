@@ -1,0 +1,10 @@
+$(function(){
+    $(".img>div:first").show();
+    setInterval(function(){
+    $(".img>div:first")
+    .fadeOut(3000)
+    .next("div")
+    .fadeIn(3000)
+    .end("div")
+    .appendTo(".img");},3000);
+});

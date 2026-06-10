@@ -1,0 +1,895 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+::-webkit-scrollbar {
+	width: 1em;
+    height: 1rem;
+}
+::-webkit-scrollbar-thumb{
+    background: #696969;
+}
+
+::-webkit-scrollbar-track {
+	background: #535353; 
+}
+
+
+ul,li{
+    list-style: none;
+}
+
+ul, li a{
+    list-style:none;
+    color: #999;
+    text-decoration: none;}
+
+ul li a:hover{
+    color: #f3364c;}
+
+.inner{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header{
+    position: fixed;
+    height: 5em;
+    line-height: 0.8rem;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    padding: 1.5rem 7%;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    background-color: rgba(33, 33, 33, 0.9);
+}
+
+.header .logo img{
+    height: 2.2rem;
+}
+
+.header .navbar a{
+    margin: 0 1rem;
+    font-size: 1rem;
+    color: #c4886e;
+    text-decoration: none;
+}
+
+.header .navbar a:hover{
+    color: white;
+    padding-bottom: .5rem;
+    text-decoration: underline;
+    
+}
+
+.header .icons div{
+    font-size: 2rem;
+    margin-left: 2rem;
+    cursor: pointer;
+}
+
+.header .icons div:hover{
+    color: #f3364c;
+}
+
+.menu{
+    width: 50rem;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    padding-top: 1.5rem;
+    font-weight: bold;
+    }
+
+.menu li{
+    float: left;
+    width: 10rem;
+    text-align: center;
+    font-size: 1.1rem;
+    margin: auto;
+}
+
+#menu-btn{
+    display: none;
+}
+
+/* header end */
+
+.home {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* 화면 전체 높이를 차지 */
+    background-image: url(../img/kanu-main.jpg); /* 배경 이미지 설정 */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    
+    
+    .home .inner .text_box-test{
+        position: relative;
+        top: 4rem;
+        left: 2rem;
+        text-align: left;
+    }
+    
+    .home .inner .text_box-test h1{
+        font-size: 9rem;
+        color: #f4f4f4;
+        line-height: 5rem;
+    }
+    
+    .home .inner .text_box-test h2{
+        font-size: 6rem;
+        color: #f4f4f4;
+    }
+    
+    .home .inner .text_box-test p{
+        font-size: 2.5rem;
+        margin: 4rem 0;
+        color: #fff;
+    }
+
+
+
+
+
+
+/* 전체 컨테이너 (최상위) */
+#contents {
+    display: flex;
+    justify-content: center; /* 수평 중앙 */
+    align-items: center; /* 수직 중앙 */
+    width: 100%;
+    background-color: #f4f4f4; /* 배경색 */
+    padding: 0 1rem; /* 작은 화면에서 여백을 추가 */
+}
+
+/* 텍스트 헤더 (h1, h2) */
+.header-text {
+    margin-bottom: 4rem; /* 아래 여백 */
+    padding: 0 1rem; /* 작은 화면에서 텍스트 여백을 추가 */
+}
+
+.box1 h1, .box2 h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #555;
+    margin-top: 5rem;
+}
+
+.box1 h2, .box2 h2 {
+    font-size: 1.3rem;
+    color: #555;
+    padding-top: 1.5rem;
+}
+
+/* 전체 컨테이너 (최상위) */
+#contents {
+    display: flex;
+    justify-content: center; /* 수평 중앙 */
+    align-items: center; /* 수직 중앙 */
+    width: 100%;
+    background-color: #f4f4f4; /* 배경색 */
+    padding: 0 1rem; /* 작은 화면에서 여백을 추가 */
+    box-sizing: border-box; /* padding이 전체 크기에 포함되도록 설정 */
+}
+
+/* 텍스트 헤더 (h1, h2) */
+.header-text1 {
+    margin-bottom: 4rem; /* 아래 여백 */
+    padding: 0 1rem; /* 작은 화면에서 텍스트 여백을 추가 */
+}
+
+.header-text2 {
+    margin-bottom: 4rem; /* 아래 여백 */
+    padding: 0 1rem; /* 작은 화면에서 텍스트 여백을 추가 */
+}
+ss
+.box1 h1, .box2 h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #555;
+    margin-top: 5rem;
+}
+
+.box1 h2, .box2 h2 {
+    font-size: 1.3rem;
+    color: #555;
+    padding-top: 1.5rem;
+}
+
+/* Box1, Box2 섹션 스타일 */
+.box1, .box2 {
+    text-align: center; /* 텍스트 중앙 정렬 */
+    width: 100%; /* 상위 컨테이너 너비 */
+    max-width: 1200px; /* 최대 너비 */
+}
+
+.box1 h1, .box2 h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #555;
+}
+
+.box1 h2, .box2 h2 {
+    font-size: 1.3rem;
+    color: #555;
+    padding-top: 1.5rem;
+}
+
+/* 각 섹션에서 이미지 박스를 담는 컨테이너 */
+.box-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap; /* 화면 크기에 맞춰 박스가 줄 바꿈되도록 설정 */
+    margin-top: 3rem; /* 섹션과 박스들 사이의 간격 */
+}
+
+
+/* Box1 왼쪽, 중앙, 오른쪽 */
+.box1_left, .box1_center, .box1_right,
+.box2_left, .box2_center, .box2_right {
+    width: 100%; /* 기본적으로 100% 너비 */
+    max-width: 350px; /* 최대 너비 */
+    height: 30rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #555;
+    display: flex;
+    flex-direction: column; /* 텍스트와 버튼이 수직으로 배치되도록 설정 */
+    justify-content: flex-end; /* 텍스트와 버튼을 하단에 정렬 */
+    text-align: center;
+    transition: all 0.4s;
+}
+
+.box1_left {
+    background-image: url(../img/white.png);
+}
+
+.box1_center {
+    background-image: url(../img/black.png);
+}
+
+.box1_right {
+    background-image: url(../img/brown.png);
+}
+
+.box2_left {
+    background-image: url(../img/pink.png); /* 새로운 이미지 */
+}
+
+.box2_center {
+    background-image: url(../img/gray.png); /* 새로운 이미지 */
+}
+
+.box2_right {
+    background-image: url(../img/blue.png); /* 새로운 이미지 */
+}
+
+/* 박스 내 텍스트와 버튼 */
+.text_box {
+    padding-bottom: 1rem; /* 텍스트와 버튼이 이미지의 아래에 위치하도록 여백을 추가 */
+}
+
+.text_box h1 {
+    font-size: 1.5rem;
+    padding-bottom: .5rem;
+    color: #f4f4f4;
+}
+
+
+
+
+
+
+
+.btn {
+    display: flex; /* Flexbox를 사용하여 텍스트 중앙 정렬 */
+    justify-content: center; /* 가로로 중앙 정렬 */
+    align-items: center; /* 세로로 중앙 정렬 */
+    width: 10em;
+    height: 3rem;
+    color: #c4886e;
+    border: 1px solid #c4886e;
+    text-align: center;
+    margin: auto;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px; /* 버튼의 모서리 둥글게 처리 */
+    box-sizing: border-box; /* padding이 버튼 크기에 영향을 주지 않도록 */
+}
+
+.btn:hover {
+    color: #555;
+    border: 1px solid #555;
+    transition: all 0.4s;
+}
+
+/* 화면이 768px 이하일 때 버튼 크기 조정 */
+@media (max-width: 768px) {
+    .btn {
+        width: 8em; /* 버튼 너비를 조금 더 작게 */
+        height: 2.5rem; /* 버튼 높이를 조금 더 작게 */
+        font-size: 0.9rem; /* 글자 크기를 조금 더 작게 */
+    }
+}
+
+/* 화면이 480px 이하일 때 버튼 크기 조정 */
+@media (max-width: 480px) {
+    .btn {
+        width: 7em; /* 버튼 너비를 더 작게 */
+        height: 2rem; /* 버튼 높이를 더 작게 */
+        font-size: 0.8rem; /* 글자 크기를 더 작게 */
+    }
+    .box1_left, .box1_center, .box1_right, .box2_left, .box2_center, .box2_right {
+        width: 100%;
+        height: 30rem;
+        max-width: unset;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        color: #555;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        text-align: center;
+        transition: all 0.4s;
+    }
+    .text{
+        font-size: 14px !important;
+    }
+
+} 
+
+/* box1 end */
+
+
+.box3{
+    width: 100%; 
+    height: 64rem; 
+    background-color: #f4f4f4;
+    }
+    
+
+.box3 .inner h1 {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+    color: #555;
+    padding-top: 6rem;
+    padding-bottom: 5rem;
+    }
+
+.box3_imgset .list {
+    width: calc(100% / 6 - 0.5%);
+    height: 40rem;
+    float: left;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    }
+
+.box3_imgset .img{
+    width: 100%;
+    height: 100%;
+    justify-content: center; /* 수평 중앙 정렬 */
+    align-items: center; /* 수직 중앙 정렬 */
+}
+
+.box3_imgset .list .l{
+    width: 100%; 
+    height: 31.5rem; 
+    position: absolute;
+    background-color: rgb(155, 155, 155); 
+    text-align: center;
+    top: 0;  
+    transform: translate(0, -50rem);
+    transition: all 0.5s; 
+    }
+
+    .box3_imgset .list .l p{
+        color: #ffffff;
+        font-size: 1rem;
+        line-height: 100%;
+        font-weight: bold;
+        margin-top: 90%;
+    }
+
+    /* .box3_imgset>.list>.l>p>span:nth-child(1){
+        font-size: 18px; font-weight: bold; color: #000;}
+
+    .box3_imgset>.list>.l>p>span{color: #838383;} */
+        
+    .box3_imgset>.list:hover>.l{
+        transform: translate(0, 0px);
+        transition: all 0.5s;}
+
+.box3_imgset>.list:nth-child(2){
+    margin-left: 0.5%;}
+.box3_imgset>.list:nth-child(3){
+    margin-left: 0.5%;}
+.box3_imgset>.list:nth-child(4){
+    margin-left: 0.5%;}
+.box3_imgset>.list:nth-child(5){
+    margin-left: 0.5%;}
+.box3_imgset>.list:nth-child(6){
+    margin-left: 0.5%;}
+
+.box3_imgset::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.box3_imgset .list p {
+    color: #555;
+    font-size: 1.1rem;
+    padding-top: 2rem;
+    font-weight: bold;
+}
+
+.box3_imgset .list p span{
+    color: #555;
+    font-size: 0.9rem;
+    }
+
+/* box3 end */
+
+.box4{
+    height: 40rem;
+    width: 100%;
+}
+
+.box4_left{
+    width: 50%;
+    height: 40rem;
+    background-color: #f4f4f4;
+    text-align: left;
+    float: left;
+}
+
+.box4_left .text_box{
+    padding-top: 12rem;
+    padding-left: 3rem;
+    text-align: left;
+}
+
+.box4_left .text_box h1{
+    font-size: 2rem;
+    font-weight: bold;
+    padding-bottom: 2rem;
+    color: #555;
+    text-align: left;
+}
+
+.box4_left .text_box h2{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-bottom: 2rem;
+    color: #c4886e;
+    text-align: left; 
+}
+
+.box4_left .text_box p{
+    font-size: 1rem;
+    padding-bottom: 3rem;
+    color: #999;
+    text-align: left;
+}
+
+.box4_right{
+    width: 50%;
+    height: 40rem;
+    float: right;
+    overflow: hidden;
+}
+
+.box4_right div{
+    width: 100%;
+    height: 40rem;
+    background-image: url(../img/sepcial.png);
+    float: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 0.4s;
+}
+
+.btn-test {
+    width: 10em;
+    height: 3rem;
+    line-height: 3rem;
+    color: #c4886e;
+    border: 1px solid #c4886e;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 0;
+    display: inline-block; 
+}
+
+.box4 h1 {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+    color: #555;
+    padding-top: 2.5rem;
+    padding-bottom: 4rem;
+    }
+
+
+
+.box5 {
+    width: 100%;
+    height: 75rem;
+}
+
+.box5 .inner h1 {
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 6rem;
+    padding-bottom: 1rem;
+    font-weight: bold;
+    color: #555;
+}
+
+/* 첫 번째 그룹: coffee1 */
+.group1 .coffee1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.group1 .coffee1 li {
+    width: 33%; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.group1 .coffee1 li:nth-child(1) .image-container {
+    background-image: url('../img/coffee1.png');
+    background-size: cover;
+    background-position: center;
+    width: 100%; /* 수정: 이미지 컨테이너 크기를 100%로 수정 */
+    height: 20rem;
+}
+
+.group1 .coffee1 li:nth-child(2) .image-container {
+    background-image: url('../img/coffee2.png');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 20rem;
+}
+
+.group1 .coffee1 li:nth-child(3) .image-container {
+    background-image: url('../img/coffee3.png');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 20rem;
+}
+
+/* 두 번째 그룹: coffee2 */
+.group2 .coffee2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.group2 .coffee2 li {
+    width: 33%; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.group2 .coffee2 li:nth-child(1) .image-container {
+    background-image: url('../img/coffee4.png');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 20rem;
+}
+
+.group2 .coffee2 li:nth-child(2) .image-container {
+    background-image: url('../img/coffee5.png');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 20rem;
+}
+
+.group2 .coffee2 li:nth-child(3) .image-container {
+    background-image: url('../img/coffee6.png');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 20rem;
+}
+
+.text {
+    font-size: 18px;
+    color: #555;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+
+
+#footer .inner{
+    background-color: #000;
+    width: 100%;
+    color: #fff;
+    font-size: 0.8rem;
+    text-align: left;
+    line-height: 80px;
+    padding-left: 3rem;
+}
+
+
+@media (max-width:991px){
+    html{font-size: 55%;}
+    .header{padding: 1.5rem 2rem;}
+}
+
+@media (max-width:480px){
+    .group1 .coffee1 li {
+        width: 100%; 
+       
+    }
+}
+
+@media (max-width:768px){
+    #menu-btn{display: inline-block;}
+    .header .navbar{
+        position: absolute;
+        top: 100%; right: -100%;
+        background: rgba(43, 43, 43, 0.8);
+        width: 13rem;
+        height: calc(70vh - 9.5rem);
+        font-family: 'Nanum Gothic', sans-serif;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    }
+
+    .header .navbar a{
+        color: #fff;
+        display: block;
+        margin: 1rem;
+        padding: .5rem;
+        font-size: 1rem;
+    }
+
+    .header .navbar a:hover{
+        color: #f3364c;
+        display: block;
+        margin: 1rem;
+        padding: .5rem;
+        font-size: 1rem;
+    }
+
+    .header .navbar.active{
+        right: 0;
+    }
+
+
+
+
+    .box1{
+        display: flex;
+        flex-direction: column;
+        height: 50rem;
+    }
+    
+    /*.box1 h1{
+        font-size: 1rem;
+        text-align: center;
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+        font-weight: bold;
+        color: #ffffff;
+    }*/
+    
+    
+    
+    /* box1 end */
+
+    .box3{
+        width: 100%; 
+        height: 126rem; 
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-items: center;
+        }
+    
+    .box3 .inner h1 {
+        padding-top: 3rem;
+        padding-bottom: 4rem;
+        }
+    
+    .box3_imgset .list {
+        padding-left: 2.2rem;
+        width: calc(100% / 2 - 3.5%);
+        height: 42rem;
+        }
+    
+    
+   .box3_imgset .list .l p{
+        font-size: 0.8rem;
+    }
+        
+    .box3_imgset>.list:nth-child(2){
+        margin-left: 2%;}
+    .box3_imgset>.list:nth-child(3){
+        margin-left: 2%;}
+    .box3_imgset>.list:nth-child(4){
+        margin-left: 2%;}
+    .box3_imgset>.list:nth-child(5){
+        margin-left: 2%;}
+    .box3_imgset>.list:nth-child(6){
+        margin-left: 2%;}
+    
+
+    .box4{
+        height: 65rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .box4_left{
+        width: 100%;
+        height: 50rem;
+        text-align: center;
+        border: none;
+    }
+    
+    .box4_left .text_box{
+        padding-top: 3rem;}
+    .box4_left .text_box p{
+        padding-bottom: 3rem;}
+    
+    .box4_right{
+        width: 100%;
+        height: 50rem;
+    }
+
+    .box5{
+        width: 100%;
+        height: 65rem;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .coffee li{
+        height: 18rem;
+        width: calc(100%/3 - 10%);
+        font-size: 1rem;
+    }
+}
+
+
+@media (max-width:580px){
+
+
+    .home{
+        background-position: center;
+        justify-content: center;
+        text-align: left;
+    }
+
+
+    .home .inner .text_box-test{
+        position: relative;
+        top: 6rem;
+        left: 2rem;
+    }
+
+    .home .inner .text_box-test h1{
+        font-size: 6rem;
+        color: #fff;
+        line-height: 6rem;
+    }
+
+    .home .inner .text_box-test h2{
+        font-size: 4rem;
+        color: #fff;
+        line-height: 4rem;
+    }
+
+    .home .inner .text_box-test p{
+        font-size: 1.6rem;
+        padding-bottom: 4rem;
+        color: #fff;
+    }
+
+    .box1 h1{
+        font-size: 1.8rem;}
+    .box1_left .text_box h1{
+        font-size: 1.6rem;
+        }
+    .box1_left .text_box p{
+        font-size: 0.9rem;
+        }
+
+    .box1_right .text_box h1{
+            font-size: 1.6rem;
+            }
+    .box1_right .text_box p{
+            font-size: 0.9rem;
+            }
+    
+    .box3 .inner, .box4 .inner {
+        margin-top: 200px;
+    }            
+    .box3 .inner h1 {
+        font-size: 1.8rem;
+        margin-top: 300px;}
+
+       .box3_imgset .list .l p{
+        font-size: 0.8rem;
+    }
+
+    .box3_imgset .list p {
+        font-size: 0.8rem;
+    }
+    
+    .box3_imgset .list p span{
+        font-size: 0.7rem;
+        }
+
+    .box4_left .text_box h1{
+            font-size: 2rem;}
+            
+    .box4_left .text_box p{
+            font-size: 1rem;}
+    
+     .box4_right{
+                width: 100%;
+                height: 45rem;
+            }
+
+    .box5{
+      width: 100%;
+      height: 100rem;
+            }
+           
+
+    .box5 .inner h1{
+        font-size: 2rem;
+                padding-top: 6rem;
+                padding-bottom: 4rem;
+                margin-top: 25rem;
+            }
+
+    .coffee li{
+                height: 18rem;
+                width: calc(100%/2 - 4%);
+                font-size: 0.95rem;
+            }
+            
+}
+
+
+
