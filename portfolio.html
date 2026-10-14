@@ -475,6 +475,19 @@
                 video.pause();
                 video.currentTime = 0;
               });
+
+              // 7번째 모달 스크립트 추가
+              document.getElementById('videoModal7').addEventListener('shown.bs.modal', function () {
+                document.getElementById('video7').play();
+              });
+
+              document.getElementById('videoModal7').addEventListener('hidden.bs.modal', function () {
+                var video = document.getElementById('video7');
+                video.pause();
+                video.currentTime = 0;
+              });
+
+              
                             
             
               // "닫기" 버튼을 클릭했을 때 비디오 정지 및 초기화 (추가된 부분)
